@@ -1,0 +1,10 @@
+~/Documentos/Hack/Hack$ git status
+~/Documentos/Hack/Hack$ cd retogit
+~/Documentos/Hack/Hack/retogit$ touch archivo.txt
+~/Documentos/Hack/Hack/retogit$ nano archivo.txt
+~/Documentos/Hack/Hack/retogit$ cat archivo.txt
+=> Firma del "branch_1"
+~/Documentos/Hack/Hack/retogit$ git branch branch_1
+~/Documentos/Hack/Hack/retogit$ git checkout "branch_1"
+=> Switched to branch 'branch_1'
+~/Documentos/Hack/Hack/retogit$ git add archivo.txt 
