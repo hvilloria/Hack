@@ -1,0 +1,149 @@
+= ..bbuuiilldd
+
+(from gem actionpack-5.0.0.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  MMiiddddlleewwaarreeSSttaacckk
+------------------------------------------------------------------------------
+  build(app = Proc.new)
+
+------------------------------------------------------------------------------
+
+
+(from gem actionpack-5.0.0.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  MMiiddddlleewwaarree
+------------------------------------------------------------------------------
+  build(app)
+
+------------------------------------------------------------------------------
+
+
+(from gem actionview-5.0.0.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  PPaatthh
+------------------------------------------------------------------------------
+  build(name, prefix, partial)
+
+------------------------------------------------------------------------------
+
+
+(from gem activerecord-5.0.0.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  AAssssoocciiaattiioonnRReellaattiioonn
+------------------------------------------------------------------------------
+  build(*args, &block)
+
+------------------------------------------------------------------------------
+
+
+(from gem activerecord-5.0.0.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  CCoolllleeccttiioonnPPrrooxxyy
+------------------------------------------------------------------------------
+  build(attributes = {}, &block)
+
+------------------------------------------------------------------------------
+
+Returns a new object of the collection type that has been instantiated with
+attributes and linked to this object, but have not yet been saved. You can
+pass an array of attributes hashes, this will return an array with the new
+objects.
+
+  class Person
+    has_many :pets
+  end
+
+  person.pets.build
+  # => #<Pet id: nil, name: nil, person_id: 1>
+
+  person.pets.build(name: 'Fancy-Fancy')
+  # => #<Pet id: nil, name: "Fancy-Fancy", person_id: 1>
+
+  person.pets.build([{name: 'Spook'}, {name: 'Choo-Choo'}, {name: 'Brain'}])
+  # => [
+  #      #<Pet id: nil, name: "Spook", person_id: 1>,
+  #      #<Pet id: nil, name: "Choo-Choo", person_id: 1>,
+  #      #<Pet id: nil, name: "Brain", person_id: 1>
+  #    ]
+
+  person.pets.size  # => 5 # size of the collection
+  person.pets.count # => 0 # count from database
+
+
+(from gem activerecord-5.0.0.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RReellaattiioonn
+------------------------------------------------------------------------------
+  build(*args, &block)
+
+------------------------------------------------------------------------------
+
+
+(from gem bundler-1.13.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  DDeeffiinniittiioonn
+------------------------------------------------------------------------------
+  build(gemfile, lockfile, unlock)
+
+------------------------------------------------------------------------------
+
+Given a gemfile and lockfile creates a Bundler definition
+
+@param gemfile [Pathname] Path to Gemfile @param lockfile [Pathname,nil] Path
+to Gemfile.lock @param unlock [Hash, Boolean, nil] Gems that have been
+requested
+  to be updated or true if all gems should be updated
+
+@return [Bundler::Definition]
+
+
+(from gem bundler-1.13.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  IInnddeexx
+------------------------------------------------------------------------------
+  build() { |i| ... }
+
+------------------------------------------------------------------------------
+
+
+(from gem bundler-1.13.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRuubbyyggeemmssIInntteeggrraattiioonn
+------------------------------------------------------------------------------
+  build(spec, skip_validation = false)
+
+------------------------------------------------------------------------------
+
+
+(from gem bundler-1.13.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  FFuuttuurree
+------------------------------------------------------------------------------
+  build(spec, skip_validation = false)
+
+------------------------------------------------------------------------------
+
+
+(from gem bundler-1.13.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  MMoorreeMMooddeerrnn
+------------------------------------------------------------------------------
+  build(spec, skip_validation = false)
+
+------------------------------------------------------------------------------
+
+Rubygems 1.8.20 and adds the skip_validation parameter, so that's when we
+start passing it through.
+
+
+(from gem globalid-0.3.7)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  GGIIDD
+------------------------------------------------------------------------------
+  build(args)
+
+------------------------------------------------------------------------------
+
+Create a new URI::GID from components with argument check.
+
+The allowed components are app, model_name, model_id and params, which can be
+either a hash or an array.
+
+Using a hash:
+
+  URI::GID.build(app: 'bcx', model_name: 'Person', model_id: '1', params: { key: 'value' })
+
+Using an array, the arguments must be in order [app, model_name, model_id,
+params]:
+
+  URI::GID.build(['bcx', 'Person', '1', key: 'value'])
+
+
