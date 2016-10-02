@@ -72,7 +72,7 @@ restaurant.waiters.build(name: "yonwilkelson alberto", gender: 0).save
 
 #plate
 restaurant =Restaurant.find(1)
-restaurant.plates.build(name: "Asopado", price: 346).save
+restaurant.plates.build(name: "Malteada de Fresa", price: 346).save
 restaurant =Restaurant.find(1)
 restaurant.plates.build(name: "Pollo", price: 236).save
 restaurant =Restaurant.find(2)
@@ -80,11 +80,11 @@ restaurant.plates.build(name: "Arroz con lleve", price: 4587).save
 restaurant =Restaurant.find(2)
 restaurant.plates.build(name: "Pasta Carbonara", price: 34).save
 restaurant =Restaurant.find(3)
-restaurant.plates.build(name: "Pasticho", price: 347).save
+restaurant.plates.build(name: "Ensalada Capresa", price: 347).save
 restaurant =Restaurant.find(4)
 restaurant.plates.build(name: "Arepa", price: 9823).save
 restaurant =Restaurant.find(5)
-restaurant.plates.build(name: "Perro Caliente", price: 5497).save
+restaurant.plates.build(name: "Ensalada Cesar", price: 5497).save
 restaurant =Restaurant.find(6)
 restaurant.plates.build(name: "Cruzado", price: 2378).save
 restaurant =Restaurant.find(7)
@@ -147,4 +147,39 @@ order = Order.find(2)
 order.plates << plate
 
 #category
-Category.create(name: "Lujos")
+Category.create(name: "Postre")
+Category.create(name: "Bebida")
+Category.create(name: "Entrada")
+Category.create(name: "Plato fuerte")
+
+p=Plate.find(1)
+c=Category.find(1)
+p.categories << c
+
+p=Plate.find(2)
+c=Category.find(4)
+p.categories << c
+
+p=Plate.find(3)
+c=Category.find(4)
+p.categories << c
+
+p=Plate.find(4)
+c=Category.find(4)
+p.categories << c
+
+p=Plate.find(5)
+c=Category.find(3)
+p.categories << c
+
+p=Plate.find(6)
+c=Category.find(4)
+p.categories << c
+
+p=Plate.find(7)
+c=Category.find(3)
+p.categories << c
+
+p=Plate.find(8)
+c=Category.find(4)
+p.categories << c
