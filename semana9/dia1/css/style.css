@@ -1,0 +1,65 @@
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+	margin: 0;
+}
+
+header{
+    background-color: #3B5998;
+    height: 42px;
+
+}
+
+header input[type="search"]{
+border: none;
+}
+
+header .container{	
+	/*x*/
+  height: inherit;
+  width: 1014px;
+  margin: auto;
+}
+
+header .search_utilities{
+	display: inline-block;
+  padding: 9px 0 1px;
+  /*background-color: #5db5b1;*/
+  width: 484px;
+}
+
+header .search{
+	display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+}
+
+header .logo{
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

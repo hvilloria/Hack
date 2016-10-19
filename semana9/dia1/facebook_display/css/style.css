@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+	font-family: Arial;
+}
+
+header {
+	background-color: #3B5998;
+	height: 42px;
+	padding: 8px 0;
+	font-size: 0;
+}
+
+header .container {
+	width: 1014px;
+	margin: auto;
+}
+
+header .logo {
+	display: inline-block;
+	margin: 1px 0;
+}
+
+header .input-search {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 6px;
+}
+
+header .input-search input {
+	border: none;
+	height: 24px;
+	border-radius: 3px 0 0 3px;
+	padding-left: 5px;
+	width: 405px;
+}
+
+header .input-search button {
+	background-color: #E9EBEE;
+	border: none;
+	height: 24px;
+	vertical-align: top;
+	border-radius: 0 3px 3px 0;
+	width: 46px;
+}
+
+header .actions {
+	display: inline-block;
+	font-size: 12px;
+	vertical-align: top;
+	font-weight: bold;
+	margin-left: 193px;
+}
+
+header .actions > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header .user-options {
+	display: inline-block;
+	vertical-align: top;
+}
+
+header .user-options .profile-pic {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+}
+
+header .user-options .profile-pic img {
+	border-radius: 2px;
+}
+
+header .user-options a {
+	color: #fff;
+	padding: 1px 5px;
+	vertical-align: -webkit-baseline-middle;
+}
+
+header .user-options a + a {
+	border-left: 1px solid #354F88;
+}
+
+header .user-options a span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header .user-options a small.notification {
+	background-color: #2C4372;
+	border-radius: 2px;
+	padding: 1px 3px;
+}
+
+header .user-icon {
+	opacity: 0.6;
+	margin-left: 28px;
+}
+
+header .chat {
+	padding: 3px 10px;
+}
+
+header .chat span.notification {
+	background-color: #FA3E3E;
+	color: #fff;
+	font-weight: normal;
+	font-size: 10px;
+	padding: 2px 3px;
+	border-radius: 3px;
+	margin-left: -6px;
+	margin-top: -5px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+header .earth img {
+	-webkit-filter: invert(1);
+	opacity: 0.6;
+}
+
+header .lock {
+	padding: 2px 0;
+	padding-left: 17px;
+	margin-left: 15px;
+	border-left: 1px solid #354F88;
+	opacity: 0.6;
+}
+
+header .caret {
+	opacity: 0.6;
+	padding: 2px 5px;
+}

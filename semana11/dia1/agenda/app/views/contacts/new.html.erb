@@ -1,0 +1,36 @@
+<h1>Contacts#new</h1>
+<p>Find me in app/views/contacts/new.html.erb</p>
+
+<%=	form_for @contact do |f| %>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :lastname %>
+		<%= f.text_field :lastname %>
+	</p>
+
+	<p>
+		<%= f.label(:gender, "Masculino")%>
+		<%= f.radio_button(:gender, "Masculino")%><br>
+		<%= f.label(:gender, "Femenino")%>	
+		<%= f.radio_button(:gender, "Femenino")%>
+
+	</p>
+	<p>
+		<%= f.label :phone %>
+		<%= f.text_field :phone %>
+	</p>
+
+	<p>
+		<%= f.label :birthdate %>
+		<%= f.text_field :birthdate %>
+	</p>
+	<p>
+		<%= f.label :profile_picture %>
+		<%= f.text_field :profile_picture %>
+	</p>
+
+	<%= f.submit%>
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  person: one
+  dni: MyString
+  name: MyString
+  lstname: MyString
+  birthday: 2016-09-26
+  gender: 1
+  car: false
+
+two:
+  person: two
+  dni: MyString
+  name: MyString
+  lstname: MyString
+  birthday: 2016-09-26
+  gender: 1
+  car: false

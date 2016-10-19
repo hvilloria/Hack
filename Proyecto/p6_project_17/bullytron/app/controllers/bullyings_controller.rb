@@ -1,0 +1,2 @@
+class BullyingsController < ApplicationController
+end

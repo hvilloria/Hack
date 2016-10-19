@@ -1,0 +1,191 @@
+
+*{
+	  
+    margin: 0px;
+    
+}
+
+input[type=radio] {
+ display: none;
+}
+
+img {
+	height: 69px;
+
+}
+
+
+
+input[type=radio]:checked + label {
+ background-color: #24547B ;
+ color:white;
+ text-align: center;
+ border: 2px solid black ;
+}
+
+label {
+ display: inline-block;
+ cursor: pointer;
+ position: relative;
+ font-size: 15px;
+ color: #24547B ;
+ text-align: center;
+ margin: 4px;
+ padding: 2px;
+ width: 135px;
+}
+
+/*.container{
+	position: relative;
+	/*background-color: blue
+}*/
+
+ .header{
+		height: 69px;
+	 	background-color: white;
+ }
+ .page{
+    height: 674px;
+    width: 1200px;
+    background-image: url(../images/lich.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ 	.profile{
+    margin-left: 40px;
+    margin-top: 127px;
+    display: inline-block;
+    height: 417px;
+    width: 493px;
+    background-image: url(../images/hoswardvilloria.png);
+    background-repeat: no-repeat;
+
+ }
+
+  .banner{
+  	 color: white;
+  }
+
+  .description{
+		padding-bottom: 174px;
+    margin-left: 31px;
+    vertical-align: top;
+    display: inline-block;
+    width: 607px;
+}
+
+ 	.text1{
+    text-align: justify;
+    padding: 13px 40px;
+    margin-top: 39px;
+    border-bottom: 7px solid gray;
+    border: 6px solid gray;
+    background-color: white;
+    
+ }
+
+ 	.selection{
+ 		padding: 57px;
+    border-bottom: 7px solid gray;
+    border-top: 7px solid gray;
+    border: 5px solid gray;
+    margin-top: 27px;
+    background-color: white;
+    text-align: justify;
+ }
+
+ 	{
+ 		padding: 7px;
+
+ }
+
+  p{
+  	display: inline-block;
+ 		color: #24547B;
+ }
+
+ 	.type:hover{
+ 		box-sizing: border-box;
+ 		border:2px solid gray;
+ }
+
+ 	.big-banner{
+		font-size: x-large;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 200;
+    margin-top: 330px;
+    margin-left: 65px;
+    background-color: white;
+    height: 45px;
+    width: 204px;
+    position: absolute;
+    border-top: 7px solid #24547B;
+    border-bottom: 7px solid #24547B;
+
+ 	}
+
+	.sm-banner-left {
+    box-sizing: border-box;
+    margin-top: 353px;
+    z-index: 100;
+    margin-left: 36px;
+    position: absolute;
+    width: 46px;
+    background-color: white;
+    height: 38px;
+    border-bottom: 7px solid #24547B;
+    border-top: 7px solid #24547B;
+}
+
+ 	.sm-banner-right{
+    box-sizing: border-box;
+    position: absolute;
+    width: 46px;
+    height: 38px;
+    background-color: white;
+    margin-left: 253px;
+    margin-top: 354px;
+    border-bottom: 7px solid #24547B;
+    border-top: 7px solid #24547B;	
+ 	}
+ 	.triangle-left{
+    position: absolute;
+    box-sizing: border-box;
+    width: 28px;
+    height: 25px;
+    border-bottom: 12PX solid transparent;
+    border-right: 12PX solid transparent;
+    border-left: 12px solid #153248;
+    border-top: 12px solid transparent;
+    margin-top: 361px;
+    margin-left: 69px;
+    z-index: 150;
+    transform: rotate(-46deg);
+ 	}
+
+ 	.triangle-right{
+    margin-top: 361px;
+    margin-left: 236px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 28px;
+    height: 25px;
+    background-color: transparent;
+    border-bottom: 11px solid transparent;
+    border-right: 11px solid #153248;
+    border-left: 11px solid transparent;
+    border-top: 11px solid transparent;
+    z-index: 400;
+    transform: rotate(43deg);
+ 	}
+
+ @media screen and (max-width: 600px) {
+    .forma {
+      background-color: #E91E63;
+      background-color: #00BCD4;
+    	border: 10px solid #607D8B;
+    	transform: rotate(0deg);
+    }
+}

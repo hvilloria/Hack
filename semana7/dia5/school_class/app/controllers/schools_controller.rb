@@ -9,10 +9,16 @@ class SchoolsController < ApplicationController
 			render json: {error: @school.errors.full_messages}, status: 400
 		end
 	end
+	
 	def index
 		@school = School.all
 		render json: @schools
 	end
+
+	def show
+		render json: @school
+	end
+
 
 	def update
 		
