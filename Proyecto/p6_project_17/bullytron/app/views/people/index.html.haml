@@ -1,0 +1,18 @@
+.row
+  .col-sm-3
+  .col-sm-6.position-button
+    = link_to (button_tag "Nueva Persona", type: "button",
+      :class => "btn btn-primary prueba"), new_person_path
+    -#
+    = link_to (button_tag "Mejor Chalequeo", type: "button", |
+      :class => "btn btn-primary "), new_person_path         |
+    -#
+    = link_to (button_tag "Eliminar Chalequeo ", type: "button", |
+      :class => "btn btn-primary"), new_person_path              |
+
+  .col-sm-3
+
+    - @people.each do |person|
+      = link_to (button_tag "#{person.name} #{person.lastname}", type: "button",
+        :class => "btn btn-primary prueba"), person_path(person)
+      -# = image_tag person.photo.url(:medium)

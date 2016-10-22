@@ -8,19 +8,19 @@
 
 
 
-Person.create(name: "Hosward", lastname:"villoria",photo: "url") #1
-Person.create(name: "Edkaryd", lastname:"Jimenez",photo: "url") #2
-Person.create(name: "Mariana", lastname:"Legonia",photo: "url") #3
-Person.create(name: "Jose", lastname:"Agapito",photo: "url") #4
-Person.create(name: "Salvador", lastname:"Campanella",photo: "url") #5
+Person.create(name: "Hosward", lastname:"villoria") #1
+Person.create(name: "Edkaryd", lastname:"Jimenez") #2
+Person.create(name: "Mariana", lastname:"Legonia") #3
+Person.create(name: "Jose", lastname:"Agapito") #4
+Person.create(name: "Salvador", lastname:"Campanella") #5
 
-Bullying.create(bully_id:1, bulled_id:2,description: "enana :3")
-Bullying.create(bully_id:2, bulled_id:3,description: "chalequeo de edka a mariana")
-Bullying.create(bully_id:3, bulled_id:4,description: "chalequeo de mariana a jose")
-Bullying.create(bully_id:4, bulled_id:5,description: "chalequeo de jose a salvador")
-Bullying.create(bully_id:5, bulled_id:1,description: "chalequeo de salvador a hosward")
-Bullying.create(bully_id:4, bulled_id:2,description: "chalequeo de jose a edkaryd")
-Bullying.create(bully_id:3, bulled_id:5,description: "chalequeo de mariana a salvador ")
+# Bullying.create(bully_id:1, bulled_id:2,description: "enana :3")
+# Bullying.create(bully_id:2, bulled_id:3,description: "chalequeo de edka a mariana")
+# Bullying.create(bully_id:3, bulled_id:4,description: "chalequeo de mariana a jose")
+# Bullying.create(bully_id:4, bulled_id:5,description: "chalequeo de jose a salvador")
+# Bullying.create(bully_id:5, bulled_id:1,description: "chalequeo de salvador a hosward")
+# Bullying.create(bully_id:4, bulled_id:2,description: "chalequeo de jose a edkaryd")
+# Bullying.create(bully_id:3, bulled_id:5,description: "chalequeo de mariana a salvador ")
 
 
 

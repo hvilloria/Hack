@@ -1,0 +1,12 @@
+= form_for @person, html:{multipart: true} do |person|
+  %p
+    = person.label :name
+    = person.text_field :name
+  %p
+    = person.label :lastname
+    = person.text_field :lastname
+  %p
+    = person.label :photo
+    = person.file_field :photo
+  %p
+    = person.submit

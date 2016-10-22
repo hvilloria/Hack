@@ -1,0 +1,13 @@
+%p#notice= notice
+%p
+  %strong Name:
+  = @person.name
+%p
+  %strong Lastname:
+  = @person.lastname
+%p
+  %strong Photo:
+  = image_tag @person.photo.url(:medium)
+
+  = link_to (button_tag "Crear chalequeo ", type: "button", |
+    :class => "btn btn-primary"), new_person_bullying_path(@person)

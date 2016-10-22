@@ -1,0 +1,4 @@
+%h1 Creacion de bullyings
+
+= form_for @bullying do |f|
+  = f.select :bully_id, options for select(person.all.map {s [s.name, s.id]})
