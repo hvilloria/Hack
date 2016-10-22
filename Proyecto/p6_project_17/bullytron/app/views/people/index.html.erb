@@ -1,0 +1,28 @@
+
+<div class= "row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6 position-button">
+	 		<%= link_to (button_tag "Nueva Persona", type: "button",
+	 		:class => "btn btn-primary prueba"), new_person_path %>
+
+			<%= link_to (button_tag "Mejor Chalequeo", type: "button",
+			:class => "btn btn-primary "), new_person_path %>
+
+			<%= link_to (button_tag "Eliminar Chalequeo ", type: "button",
+			:class => "btn btn-primary"), new_person_path %>
+			div
+
+	</div>
+	<div class="col-sm-3"></div>
+
+	</div>
+	<div>
+
+		<h1>PEOPLE</h1>
+		<ol>
+			<% @people.each do |person|%>
+				<li>name: <%=person.name%> lastname: <%=person.lastname%> photo: <%=person.photo%></li>
+			<%end%>
+		</ol>
+
+	</div>

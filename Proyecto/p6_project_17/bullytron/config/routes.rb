@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   resources :people do
   resources :bullyings
 	end
+
+	root 'people#index'
 end
 

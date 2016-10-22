@@ -1,0 +1,18 @@
+<%= form_for @person do |person| %>
+  <p>
+  	<%= person.label :name %>
+  	<%= person.text_field :name %>
+  </p>
+  <p>
+  	<%= person.label :lastname %>
+  	<%= person.text_field :lastname %>
+  </p>
+  <p>
+  	<%= person.label :photo %>
+  	<%= person.text_field :photo %>
+  </p>
+
+  <p>
+  	<%= person.submit %>
+  </p>
+<% end %>
