@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(version: 20161022024214) do
     t.string   "lastname"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
-    t.         "photo"
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"

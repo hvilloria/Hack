@@ -1,0 +1,5 @@
+%h1 por aqui se edita
+
+= form_for @bullying, url: {action: "update"} do |bully|
+  =bully.text_field :description
+  =bully.submit

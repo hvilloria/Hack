@@ -8,11 +8,11 @@
 
 
 
-Person.create(name: "Hosward", lastname:"villoria") #1
-Person.create(name: "Edkaryd", lastname:"Jimenez") #2
-Person.create(name: "Mariana", lastname:"Legonia") #3
-Person.create(name: "Jose", lastname:"Agapito") #4
-Person.create(name: "Salvador", lastname:"Campanella") #5
+# Person.create(name: "Hosward", lastname:"villoria") #1
+# Person.create(name: "Edkaryd", lastname:"Jimenez") #2
+# Person.create(name: "Mariana", lastname:"Legonia") #3
+# Person.create(name: "Jose", lastname:"Agapito") #4
+# Person.create(name: "Salvador", lastname:"Campanella") #5
 
 # Bullying.create(bully_id:1, bulled_id:2,description: "enana :3")
 # Bullying.create(bully_id:2, bulled_id:3,description: "chalequeo de edka a mariana")

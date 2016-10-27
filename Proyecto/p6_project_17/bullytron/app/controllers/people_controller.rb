@@ -11,16 +11,17 @@ class PeopleController < ApplicationController
 	end
 
 	def create
-		@person = Person.new
-    respond_to do |format|
-      if @person.create(person_params)
-        format.html { redirect_to @person, notice: 'User was successfully created.' }
-        format.json { render :show, status: :ok, location: @person }
-      else
-        format.html { render :create }
-        format.json { render json: @person.errors, status: :unprocessable_entity }
-      end
-    end
+		@people = Person.new(person_params)
+		respond_to do |format|
+			if @people.save
+				if @people.id > 1
+					@people.create_bullyings
+				end
+				format.html { redirect_to @people, notice: 'User was successfully created.' }
+			else
+				format.html { render :new }
+			end
+		end
 	end
 
 	def show

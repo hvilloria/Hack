@@ -9,5 +9,5 @@
   %strong Photo:
   = image_tag @person.photo.url(:medium)
 
-  = link_to (button_tag "Crear chalequeo ", type: "button", |
-    :class => "btn btn-primary"), new_person_bullying_path(@person)
+  = link_to (button_tag "Ver Chalequeos", type: "button", |
+    :class => "btn btn-primary"), person_bullyings_path(@person)

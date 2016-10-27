@@ -5,8 +5,16 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    %header.header
-      aqui debe ir tu header
-      .container
-        = yield
-        / y justo aqui es donde entraran todos tus htmls cada que se cargue una vista
+    %header
+      .row
+        .col-sm-6
+          = link_to (image_tag "logo.png", :class => "img-responsive logo"), people_path
+
+        .col-sm-6.header
+          = link_to (button_tag "Nueva Persona", type: "button",
+            :class => "btn btn-success"), new_person_path
+          -#
+          = link_to (button_tag "Mejor Chalequeo", type: "button", :class => "btn btn-success "),
+          new_person_path
+    .container
+      = yield

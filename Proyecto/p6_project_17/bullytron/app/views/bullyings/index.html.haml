@@ -1,0 +1,14 @@
+%h1 Bullyings
+
+.list
+- @bullying.each do |bully|
+  %li
+    = bully.description
+    = link_to (button_tag "Editar ", type: "button", :class => "btn btn-primary"), edit_bullying_path(bully)
+    = button_to "delete", bully, :method => :delete,  :class => "btn btn-warning"
+
+
+
+-# = link_to (button_tag "Eliminar", type: "button", :class => "btn btn-primary"), 'Destroy', bully, method: :delete, data: { confirm: 'Are you sure?' }
+
+-# link_to 'Destroy', address, method: :delete, data: { confirm: 'Are you sure?' } %>

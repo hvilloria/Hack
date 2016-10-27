@@ -1,8 +1,26 @@
 body{
+	background-image: url('lich.jpg');
+	background-size: cover;
 	box-sizing: border-box;
-	margin:0px;
+}
+p{
+	color: aqua;
+}
+.header{
+	float: right;
+	vertical-align: middle;
+}
+
+.logo{
+	float: left;
+	height: 85px;
+	margin-left: 10px;
 }
 
 .position-button {
   text-align: center;
+}
+
+.list{
+	display: inline-block;
 }
