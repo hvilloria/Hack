@@ -1,0 +1,46 @@
+Bullytron (2.0) en rails
+Anteriormente se creó un pequeño juego de adivinanzas en el cual se trataba de encontrar quien escribió el mejor chalequeo sobre otra persona del grupo. Para esto se crearon vistas estaticas en las cuales se seleccionaba un nombre, y si esa persona fue la mas votada como el “Mejor Chalequeo” su foto se hacia visible debajo de las opciones.
+
+Sin embargo el proceso de votación y recolección de chalequeos se realizó de forma manual, lo cual es bastante ineficiente si tomamos en cuenta que somos hackers.
+
+Enunciado
+La idea es simple. En nuestro sistema debemos poder contar con las siguientes opciones:
+
+Registrar personas: Permite agregar personas al sistema
+Crear chalequeos: Al seleccionar una persona, permitirle a esa persona registrar chalequeos (de los demas)
+Votar: Al seleccionar una persona, votar cual fue el mejor chalequeo que le han hecho a esa persona
+Jugar: Permite adivinar cual es el responsable del mejor chalequeo a una persona.
+El modelo de datos sobre el que se trabaja es el siguiente:
+
+Person:
+
+first_name: string
+last_name: string
+photo: string (nombre del archivo)
+Bullying:
+
+bully_id (chalequeador): foranea
+bulled_id (target): foranea
+description: text
+the_best: integer, (default 0) o boolean
+Para resolver el sistema debe contar con una serie de vistas que permitan al usuario ejecutar las acciones ya propuestas. La mayoría de las vistas se benefician de la lista de las personas agregadas, asi que es recomendable que se mantenga el mismo Layout o Plantilla de la vista del juego.
+
+Las pantallas requeridas son las siguientes:
+
+Listado de personas: Página con un listado sidebar de personas, que al seleccionarlas se muestra su foto y las opciones disponibles:
+Chalequear (Modificar chalequeos)
+Votar (elegir mejor chalequeo)
+Eliminar (Eliminar persona)
+Agregar Personas: Vista general que despliega un formulario que permite agregar una persona.
+Agregar chalequeos de alguien: Al seleccionar esta opcion se permite a esa persona agregar chalequeos para todos los demas participantes registrados. esta opcion esta pensada para ser la pantalla en la cual cada quien agrega/actualiza sus chalequeos. Debe ser un formulario con un campo para cada persona registrada diferente al chalequeador.
+Votacion de los chalequeos de alguien: Al seleccionar esta opcion se muestran al usuario todos los chalequeos de la persona seleccionada y se permite al usuario votar por cual es el mejor de todos estos chalequeos. Esto se maneja también con un formulario.
+Vista del juego: La pantalla del juego ya conocida. muestra la foto de la persona, el chalequeo más votado de esa persona, y permite seleccionar nombres de otras personas hasta encontrar el autor del chalequeo mas votado. En este caso, su foto se mostrará en pantalla dinámicamente.
+Por otro lado la página debe contar con un Header en el cual estará el logo de Hack, con las opciones generales de navegación del site.
+
+NOTAS:
+Deben utilizarse los métodos vistos en clases (partials/helpers) para reutilizar la menor cantidad de código de vistas posible.
+El manejo de los listados debe hacerse eficientemente en su mayoria usnado las facilidades que te da Ruby+ERB
+Las vistas deben tener en cuenta los casos borde. Si en el sistema no se ha guardado datos, la vista debe ser informativa de esta situación y no vacía o simple.
+Las vistas deben funcionar correcta y dinámicamente dependiendo de la data, es decir:
+No se puede jugar si no se ha votado por todos los chalequeos
+No se puede votar si no están todos los chalequeos agregados o si existen chalequeos en blanco para esa persona dependiendo de la cantidad de personas

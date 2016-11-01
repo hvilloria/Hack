@@ -1,0 +1,12 @@
+a{
+	display: block;
+}
+ul{
+	display: none;
+	color: green;
+}
+
+ul.open{
+	display: inline-block;
+	color: blue;
+}
