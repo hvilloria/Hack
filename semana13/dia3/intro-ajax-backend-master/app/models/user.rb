@@ -1,7 +1,7 @@
 class User < ApplicationRecord
 
-  def searchName(user)
-    self.where("name like ?", "%#{user}%")
+  def self.searchName(user)
+    @name=self.where("name like ?", "%#{user}%")
   end
 
 end

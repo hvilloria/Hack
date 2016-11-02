@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 
   def searchname
     @user = User.searchName(params[:search])
+    render json: @user
   end
 
   # GET /users/1
