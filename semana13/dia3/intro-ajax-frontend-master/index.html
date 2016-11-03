@@ -79,80 +79,84 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      function drawTable(users){
-        var tbody = $("#usersTable > tbody:last-child")
-        $.each(users, function(index, user){
-          var tr = $("<tr></tr>")
-          var tdName = $("<td></td>").text(user.name)
-          var tdLastName = $("<td></td>").text(user.lastname)
-          var tdDNI = $("<td></td>").text(user.dni)
-          tr.append(tdName, tdLastName, tdDNI)
-          tbody.append(tr)
-        });
+      var usersUnit = {
+        userList=[],
+        function drawTable(users){
+          var tbody = $("#usersTable > tbody:last-child")
+          $.each(users, function(index, user){
+            var tr = $("<tr></tr>")
+            var tdName = $("<td></td>").text(user.name)
+            var tdLastName = $("<td></td>").text(user.lastname)
+            var tdDNI = $("<td></td>").text(user.dni)
+            tr.append(tdName, tdLastName, tdDNI)
+            tbody.append(tr)
+          });
+        }
+
+        function cleanTable(){
+          var tbody = $("#usersTable > tbody")
+          tbody.empty();
+        }
+
+        function loadTable(){
+          $.ajax({
+            url: "http://localhost:3000/users",
+            method: "get",
+            dataType: "json",
+            success: function(users){
+              drawTable(users);
+            }
+          })
+        }
+
+        function sendForm(form, formData){
+          $.ajax({
+            url: "http://localhost:3000/users",
+            method: "post",
+            dataType: "json",
+            data: formData,
+            success: function(user){
+              form.trigger("reset");
+              cleanTable();
+              loadTable();
+            }
+          })
+        }
+        function sendSearch(nameSearch){
+          $.ajax({
+            url: "http://localhost:3000/username",
+            method: "get",
+            dataType: "json",
+            data: nameSearch,
+            success: function(name){
+              console.log(name);
+            }
+          })
+        }
+
+        function searchForm(){
+          $("#formSearch").submit(function(){
+            alert("algo");
+            event.preventDefault();
+            var nameSearch = $(this).serialize();
+            console.log(nameSearch)
+            sendSearch(nameSearch);
+          });
+          // $.ajax({
+          //
+          // });
+        }
+
+        function handleForm(){
+          $("#newUser").submit(function(event){
+            event.preventDefault();
+            var formData = $(this).serializeArray();
+            console.log(formData)
+            sendForm($(this), formData);
+          });
+        }
       }
 
-      function cleanTable(){
-        var tbody = $("#usersTable > tbody")
-        tbody.empty();
-      }
-
-      function loadTable(){
-        $.ajax({
-          url: "http://localhost:3000/users",
-          method: "get",
-          dataType: "json",
-          success: function(users){
-            drawTable(users);
-          }
-        })
-      }
-
-      function sendForm(form, formData){
-        $.ajax({
-          url: "http://localhost:3000/users",
-          method: "post",
-          dataType: "json",
-          data: formData,
-          success: function(user){
-            form.trigger("reset");
-            cleanTable();
-            loadTable();
-          }
-        })
-      }
-      function sendSearch(nameSearch){
-        $.ajax({
-          url: "http://localhost:3000/username",
-          method: "get",
-          dataType: "json",
-          data: nameSearch,
-          success: function(name){
-            console.log(name);
-          }
-        })
-      }
-
-      function searchForm(){
-        $("#formSearch").submit(function(){
-          alert("algo");
-          event.preventDefault();
-          var nameSearch = $(this).serialize();
-          console.log(nameSearch)
-          sendSearch(nameSearch);
-        });
-        // $.ajax({
-        //
-        // });
-      }
-
-      function handleForm(){
-        $("#newUser").submit(function(event){
-          event.preventDefault();
-          var formData = $(this).serializeArray();
-          console.log(formData)
-          sendForm($(this), formData);
-        });
-      }
 
       $(document).ready(function(){
         loadTable();
