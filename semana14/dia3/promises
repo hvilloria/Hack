@@ -1,0 +1,22 @@
+function myPromises(){
+  return new Promise(function(resolve,reject){
+    setTimeout(() => {
+      resolve('Estoy en una promesa');
+    }, 4000);
+    setTimeout(() => {
+      reject('estoy en un error');
+    }, 5000);
+  })
+}
+------------------------------------------------
+
+myPromises()
+  .then(function(data){
+    console.log(data)
+  });
+  .catch(function(err){
+    console.log(err)
+  });
+
+
+https//:jsonplaceholder.typicode.com/comments

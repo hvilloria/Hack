@@ -1,0 +1,17 @@
+instalacion de base de datos: ?
+Rails : gem install rails
+node: http://www.sergiolepore.net/2014/06/30/nvm-instalando-y-usando-node-version-manager
+
+
+
+yeoman
+
+-eliminar Node
+-Instalar nvm de la guia que dejo basilio/ version: 4.6.1
+ -node: http://www.sergiolepore.net/2014/06/30/nvm-instalando-y-usando-node-version-manager
+-Instalar webpack global
+-Crear proyecto en webpack
+ -npm init
+ -npm install --save-dev webpack
+
+

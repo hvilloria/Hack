@@ -1,0 +1,20 @@
+{
+  "name": "workflow_blower",
+  "homepage": "https://github.com/hvilloria/Hack",
+  "authors": [
+    "Hosward <hosward.avc@gmail.com>"
+  ],
+  "description": "practica de bower",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
