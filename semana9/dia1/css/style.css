@@ -14,7 +14,7 @@ header input[type="search"]{
 border: none;
 }
 
-header .container{	
+header .container{
 	/*x*/
   height: inherit;
   width: 1014px;
@@ -37,29 +37,3 @@ header .search{
 header .logo{
 	display: inline-block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

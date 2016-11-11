@@ -1,0 +1,6 @@
+comandos para react:
+-npm init
+-npm i react react-dom –save
+-npm i babel webpack webpack-dev-server –save
+-npm i babel-loader babel-core babel-preset-es2015 babel-preset-react
+-touch App.js main.js index.html webpack.config.js
