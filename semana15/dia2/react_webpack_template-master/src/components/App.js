@@ -10,19 +10,19 @@ class App extends Component {
       songs: []
     }
     this.HandleAddSong = this.HandleAddSong.bind(this)
+
   }
   HandleAddSong(song){
-    const songs= [...this.state.songs,song]
+    let songs= [...this.state.songs,song]
     this.setState({songs})
-  //  console.log(this.state.songs);
-
-
+    //console.log(this.state.songs);
   }
+
   render() {
     return(
       <div>
         <SongFinder songList={this.HandleAddSong}/>
-        <Playlist songList={this.state.song}/>
+        <Playlist songList={this.state.songs}/>
       </div>
     );
   }
