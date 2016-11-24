@@ -1,0 +1,10 @@
+-better errors(para la ejecucion del error en la pagina y te deja modificar en tiempo de ejecucion)
+-paperclips(cargar imagenes)
+-annotate(muestra los detalles en los modelos de las tablas)
+-faker(cargar data)
+-country(manejar todos los datos de los paises)
+-devise(funciona para generar modelos de autenticacion)
+-activeadmin(agilizar el crud de las paginas pero tener cuidado ya que no es flexible, mayor usabilidad con proyectos que son prototipos y/o proyectos que los administra el mismo developer)
+
+Pagina de Gemas
+https://rubygems.org/

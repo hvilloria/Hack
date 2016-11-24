@@ -15,10 +15,10 @@ class App extends Component {
   HandleAddSong(song){
     let songs= [...this.state.songs,song]
     this.setState({songs})
-    //console.log(this.state.songs);
   }
 
   render() {
+    console.log(this.state.songs);
     return(
       <div>
         <SongFinder songList={this.HandleAddSong}/>

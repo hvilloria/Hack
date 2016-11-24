@@ -12,8 +12,7 @@ class Playlist extends Component{
   communicateSongs(){
     let songs = this.props.songList
     console.log(songs);
-    //this.setState({songs: ,})
-    console.log(this.state.songs);
+    this.setState({songs})
   }
 
   // let items = searchSongs.map((value, index) => {
@@ -21,10 +20,14 @@ class Playlist extends Component{
   // })
 
   render(){
-    let allSongs = this.communicateSongs
+    console.log(this.state.songs);
+    let allSongs = this.props.songList.map((song) => {
+      return (<h1>{song}</h1>)
+    })
     return(
       <div className="divSongFinder">
-        <h1>{allSongs}</h1>
+        {/* <h1>{this.props.songList}</h1> */}
+        {allSongs}
       </div>)
   }
 }
