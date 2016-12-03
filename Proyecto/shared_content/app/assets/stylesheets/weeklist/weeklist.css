@@ -1,0 +1,35 @@
+.week-container{
+	width: 250px;
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
+.week-item:nth-child(odd){
+	background-color: #202942;
+}
+
+.week-item:nth-child(odd) .notes{
+	background-color: #202942;
+}
+
+
+.week-item{
+    cursor: pointer;
+    height: 30px;
+    color: white;
+    padding: 8px;
+}
+
+.week-item span{
+	box-sizing: border-box;
+}
+
+
+
+.notes{
+	font-weight: bold;
+  font-size: 10px;
+	display: block;
+}

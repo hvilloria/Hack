@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: academic_notes
+#
+#  id              :integer          not null, primary key
+#  title           :string
+#  description     :text
+#  author          :string
+#  post            :date
+#  academic_day_id :integer
+#  user_id         :integer
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  author: MyString
+  post: 2016-11-25
+  academic_day: one
+  user: one
+
+two:
+  title: MyString
+  description: MyText
+  author: MyString
+  post: 2016-11-25
+  academic_day: two
+  user: two

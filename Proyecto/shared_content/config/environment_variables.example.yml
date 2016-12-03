@@ -1,0 +1,15 @@
+development:
+  DB_NAME: 'db_name'
+  DB_USERNAME: 'my_username'
+  DB_PASSWORD: 'my_pass'
+  DB_HOST: localhost
+test:
+  DB_NAME: 'db_name'
+  DB_USERNAME: 'my_username'
+  DB_PASSWORD: 'my_pass'
+  DB_HOST: localhost
+production:
+  DB_NAME: 'db_name'
+  DB_USERNAME: 'my_username'
+  DB_PASSWORD: 'my_pass'
+  DB_HOST: localhost

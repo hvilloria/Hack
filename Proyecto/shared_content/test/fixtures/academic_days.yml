@@ -1,0 +1,25 @@
+# == Schema Information
+#
+# Table name: academic_days
+#
+#  id               :integer          not null, primary key
+#  schedule         :date             not null
+#  status           :integer
+#  position         :integer
+#  academic_week_id :integer
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  day_id           :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sub_content: MyString
+  day: 2016-11-25
+  academic_week: one
+
+two:
+  sub_content: MyString
+  day: 2016-11-25
+  academic_week: two

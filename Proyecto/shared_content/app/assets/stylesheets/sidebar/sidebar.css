@@ -1,0 +1,35 @@
+.sidebar-container{
+    display: inline-block;
+    min-height: 100vh;
+    width: 221px;
+    background-color: #1461B9;
+}
+.options-container{
+  text-align: center;
+  background-color: red;
+}
+
+.option-button{
+  cursor: pointer;
+  padding-top: 11px;
+  text-decoration: none;
+  display: block;
+  border: 0px;
+  height: 30px;
+  color: white;
+  width: 100%;
+  background-color: #1461B9;
+}
+
+.option-button.active{
+  background-color: #1B2137;
+
+}
+.option-button:hover{
+  background-color: #1B2137;
+
+}
+
+.option-button:focus{
+  background-color: #1B2137;
+}

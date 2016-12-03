@@ -1,0 +1,19 @@
+# == Schema Information
+#
+# Table name: days
+#
+#  id         :integer          not null, primary key
+#  content    :string           not null
+#  position   :integer          not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  week_id    :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sub_content: MyString
+
+two:
+  sub_content: MyString

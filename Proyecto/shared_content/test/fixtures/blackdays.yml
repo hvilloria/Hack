@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: blackdays
+#
+#  id           :integer          not null, primary key
+#  name         :string           not null
+#  day          :date             not null
+#  promotion_id :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  day: 2016-11-25
+  promotion: one
+
+two:
+  name: MyString
+  day: 2016-11-25
+  promotion: two
